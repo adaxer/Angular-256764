@@ -1,0 +1,27 @@
+import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
+
+import { AppRoutingModule } from './app-routing.module';
+import { AppComponent } from './app.component';
+import { TaskItemComponent } from './task-item/task-item.component';
+import { TaskListComponent } from './task-list/task-list.component';
+import { StatusElementComponent } from './shared/status-element/status-element.component';
+import { TaskFormComponent } from './task-form/task-form.component';
+import { ToastListComponent } from './shared/toast-list/toast-list.component';
+import { RelativeDatePipe } from './pipes/relative-date.pipe';
+
+@NgModule({
+    declarations: [
+        AppComponent,
+        TaskItemComponent,
+        TaskListComponent,
+        StatusElementComponent,
+        TaskFormComponent,
+        ToastListComponent,
+        RelativeDatePipe,
+    ],
+    imports: [BrowserModule, AppRoutingModule],
+    providers: [],
+    bootstrap: [AppComponent],
+})
+export class AppModule {}

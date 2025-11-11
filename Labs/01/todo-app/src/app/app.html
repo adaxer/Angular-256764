@@ -1,0 +1,7 @@
+<main class="grid"><label for="">Aufgabe</label><input type="text"><br><button>Neue Aufgabe</button></main>
+<app-star #starComponent [stars]="myRating" (starsChanged)="ratingChanged($event)"></app-star>
+<div>{{description}}</div>
+<div>6 * 7 = {{6*7}}</div>
+<Button (click)="increaseRating()">Rating + 1</Button>
+{{title()}}
+<router-outlet />
