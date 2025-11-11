@@ -1,0 +1,2 @@
+https://learnwithawais.medium.com/still-using-component-ts-angular-20-just-changed-the-rules-dd7d8e21b9bc
+https://angular.dev/update-guide?v=17.0-20.0&l=2
