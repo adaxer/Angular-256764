@@ -1,0 +1,17 @@
+<div class="flex">
+  <!-- Wir koennen ng-container verwenden, um den Source Code uebersichtlich zu halten -->
+  @for (dish of dishes; track $index) {
+  <app-card [dish]="dish" (ordered)="addOrder($event)">
+    <img [src]="dish.imagePath" alt="Pizza" />
+
+    @if (dish.remarks) {
+    <div class="remarks">
+      {{ dish.remarks }}
+    </div>
+    }
+  </app-card>
+
+  }
+</div>
+
+<app-tables-view></app-tables-view>
